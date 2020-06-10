@@ -76,9 +76,9 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <a href="{{ url_for('photo',photo=photo['photo']) }}" class="thumbnail"><img src="{{ photo['thumb'] }}" alt="{{ photo['title'] }}" title="{{ photo['title'] }}" width="100%" class="img-responsive"></a>
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>{{ photo['title'] }}</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">{{ photo['title'] }}</text></svg>
               <div class="card-body">
-                <p class="card-text"><b>{{ photo['title'] }}</b><br>{{ photo['comments'] }}</p>
+                <p class="card-text">{{ photo['comments'] }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                 </div>
               </div>
